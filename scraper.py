@@ -2,8 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import os
 from datetime import datetime
-#https://www.mangabox.me/reader/254958/episodes/116934/
-URL = "https://www.mangabox.me/reader/166016/episodes/115689/"
+
+URL = "" # Add URL of chapter
 getURL = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"})
 soup = BeautifulSoup(getURL.text, 'html.parser')
 
